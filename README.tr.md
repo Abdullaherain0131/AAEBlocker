@@ -21,6 +21,7 @@
   <br><br>
 
   <p><em>Geliştirici: Abdullah Asım Ersin (İnsanlığa yardım için açık kaynaklı geliştirilmiştir.)</em></p>
+  <p>Hata mı fark ettiniz? -> <strong>iletisim@lafolsun.com</strong></p>
 </div>
 
 ---

@@ -637,7 +637,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     // 9. YAPAY ZEKA GÖRSEL ALGI VE ÖĞRENEN SİNİR AĞI MODÜLÜ (ORTAK BEYİN - CLOUD SYNC)
-    const firebaseDatabaseURL = "https://aaeb-19471-default-rtdb.europe-west1.firebasedatabase.app";
+    const firebaseDatabaseURL = "https://YOUR-FIREBASE-PROJECT.firebasedatabase.app";
     
     const aiConfig = {
         learningRate: 0.1,

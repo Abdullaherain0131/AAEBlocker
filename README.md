@@ -21,6 +21,7 @@
   <br><br>
   
   <p><em>Developer: Abdullah Asım Ersin (Open-source built to help humanity.)</em></p>
+  <p>Did you find a bug? -> <strong>iletisim@lafolsun.com</strong></p>
 </div>
 
 ---

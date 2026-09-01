@@ -23,7 +23,7 @@ We use Google Firebase Realtime Database exclusively for syncing the anonymous A
 We may update this policy occasionally to reflect changes in our extension. All updates will be published on our GitHub repository.
 
 ## 5. Contact
-If you have any questions about this Privacy Policy, please open an issue on our GitHub repository: [https://github.com/Abdullaherain0131/AAEBlocker](https://github.com/Abdullaherain0131/AAEBlocker)
+If you have any questions about this Privacy Policy or find a bug, please contact: **iletisim@lafolsun.com** or open an issue on our GitHub repository: [https://github.com/Abdullaherain0131/AAEBlocker](https://github.com/Abdullaherain0131/AAEBlocker)
 
 ---
 
@@ -43,4 +43,4 @@ AAEBlocker, yerel bir yapay zeka modeli kullanarak reklamları engeller.
 - **`contextMenus`:** Sağ tık menüsüne yapay zeka eğitim butonunu eklemek için gereklidir.
 - **`storage`:** Yapay zekanın öğrendiği bilgileri kendi bilgisayarınıza kaydetmesi için gereklidir.
 
-İletişim ve destek için GitHub sayfamızı ziyaret edebilirsiniz.
+İletişim, hata bildirimi ve destek için: **iletisim@lafolsun.com** veya GitHub sayfamızı ziyaret edebilirsiniz: [https://github.com/Abdullaherain0131/AAEBlocker](https://github.com/Abdullaherain0131/AAEBlocker)
