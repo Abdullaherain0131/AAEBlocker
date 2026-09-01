@@ -658,6 +658,13 @@ document.addEventListener('DOMContentLoaded', () => {
                 for (let key in data) {
                     const entry = data[key];
                     if (entry.weights && entry.bias !== undefined) {
+                        // VERİ ZEHİRLENMESİ (DATA POISONING) KORUMASI: Aykırı (Çok büyük/küçük) değerleri reddet
+                        if (Math.abs(entry.weights.w1) > 10 || Math.abs(entry.weights.w2) > 10 || 
+                            Math.abs(entry.weights.w3) > 10 || Math.abs(entry.weights.w4) > 10 || 
+                            Math.abs(entry.bias) > 10) {
+                            continue; // Bu zehirli veriyi atla!
+                        }
+                        
                         totalW1 += entry.weights.w1 || 0;
                         totalW2 += entry.weights.w2 || 0;
                         totalW3 += entry.weights.w3 || 0;
