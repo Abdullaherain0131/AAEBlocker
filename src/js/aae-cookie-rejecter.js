@@ -636,7 +636,9 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 
-    // 9. YAPAY ZEKA GÖRSEL ALGI VE ÖĞRENEN SİNİR AĞI MODÜLÜ
+    // 9. YAPAY ZEKA GÖRSEL ALGI VE ÖĞRENEN SİNİR AĞI MODÜLÜ (ORTAK BEYİN - CLOUD SYNC)
+    const firebaseDatabaseURL = "https://aaeb-19471-default-rtdb.europe-west1.firebasedatabase.app";
+    
     const aiConfig = {
         learningRate: 0.1,
         threshold: 0.75,
@@ -644,12 +646,75 @@ document.addEventListener('DOMContentLoaded', () => {
         bias: -0.5
     };
 
+    // Firebase'den Ağırlıkları Çek ve Ortalamasını Al (Pull & Merge)
+    const cloudPullWeights = async () => {
+        try {
+            const response = await fetch(`${firebaseDatabaseURL}/weights.json`);
+            if (!response.ok) return;
+            const data = await response.json();
+            if (data && typeof data === 'object') {
+                let totalW1 = 0, totalW2 = 0, totalW3 = 0, totalW4 = 0, totalBias = 0;
+                let count = 0;
+                for (let key in data) {
+                    const entry = data[key];
+                    if (entry.weights && entry.bias !== undefined) {
+                        totalW1 += entry.weights.w1 || 0;
+                        totalW2 += entry.weights.w2 || 0;
+                        totalW3 += entry.weights.w3 || 0;
+                        totalW4 += entry.weights.w4 || 0;
+                        totalBias += entry.bias || 0;
+                        count++;
+                    }
+                }
+                if (count > 0) {
+                    // Kendi ağırlıklarımızı da hesaba katalım (%50 kendi, %50 ortak beyin)
+                    aiConfig.weights.w1 = (aiConfig.weights.w1 + (totalW1 / count)) / 2;
+                    aiConfig.weights.w2 = (aiConfig.weights.w2 + (totalW2 / count)) / 2;
+                    aiConfig.weights.w3 = (aiConfig.weights.w3 + (totalW3 / count)) / 2;
+                    aiConfig.weights.w4 = (aiConfig.weights.w4 + (totalW4 / count)) / 2;
+                    aiConfig.bias = (aiConfig.bias + (totalBias / count)) / 2;
+                    
+                    // Güncel hali Local Storage'a kaydet
+                    if (typeof chrome !== 'undefined' && chrome.storage && chrome.storage.local) {
+                        chrome.storage.local.set({ aae_ai_weights: aiConfig.weights, aae_ai_bias: aiConfig.bias });
+                    }
+                    console.log("[AAEBlocker] Ortak Beyin (Cloud) Senkronizasyonu Başarılı. Öğrenilen Veri Sayısı:", count);
+                }
+            }
+        } catch(e) {
+            console.log("[AAEBlocker] Ortak Beyin Bağlantı Hatası:", e);
+        }
+    };
+
+    // Yeni Ağırlıkları Firebase'e Gönder (Push)
+    const cloudPushWeights = async () => {
+        try {
+            await fetch(`${firebaseDatabaseURL}/weights.json`, {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({
+                    weights: aiConfig.weights,
+                    bias: aiConfig.bias,
+                    timestamp: Date.now()
+                })
+            });
+            console.log("[AAEBlocker] Yeni Ağırlıklar Ortak Beyne (Cloud) Gönderildi.");
+        } catch(e) {
+            console.log("[AAEBlocker] Ortak Beyne Gönderim Başarısız:", e);
+        }
+    };
+
     try {
         if (typeof chrome !== 'undefined' && chrome.storage && chrome.storage.local) {
             chrome.storage.local.get(['aae_ai_weights', 'aae_ai_bias'], (result) => {
                 if (result.aae_ai_weights) aiConfig.weights = result.aae_ai_weights;
                 if (result.aae_ai_bias !== undefined) aiConfig.bias = result.aae_ai_bias;
+                
+                // Başlangıçta Buluttan Veri Çek (Senkronizasyon)
+                setTimeout(cloudPullWeights, 2000);
             });
+        } else {
+            setTimeout(cloudPullWeights, 2000);
         }
     } catch(e) {}
 
@@ -727,7 +792,9 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         } catch(e) {}
         
-        logToHud(`AI Öğrendi! Yeni Ağırlıklar Kaydedildi.`);
+        logToHud(`AI Öğrendi! Ortak Beyne Gönderiliyor...`);
+        // Yeni ağırlıkları buluta gönder (push)
+        cloudPushWeights();
     };
 
     const perceptualAdBlock = (nodes) => {
