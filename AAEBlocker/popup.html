@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <img src="icons/logo.png" alt="Logo" class="logo">
+            <h2>AAEBlocker V3</h2>
+        </div>
+        
+        <div class="main-control">
+            <label class="switch">
+                <input type="checkbox" id="power-toggle" checked>
+                <span class="slider round"></span>
+            </label>
+            <div class="status-text" id="status-label">KORUMA AKTİF</div>
+        </div>
+
+        <div class="features-list">
+            <!-- Ad Replacer -->
+            <div class="feature-item">
+                <span class="feature-icon">🛡️</span>
+                <span class="feature-name">Reklam & Logo</span>
+                <label class="mini-switch"><input type="checkbox" id="t-adReplacer" checked><span class="mini-slider round"></span></label>
+            </div>
+            <!-- Cookie Rejecter -->
+            <div class="feature-item">
+                <span class="feature-icon">🍪</span>
+                <span class="feature-name">Çerez Katili</span>
+                <label class="mini-switch"><input type="checkbox" id="t-cookieRejecter" checked><span class="mini-slider round"></span></label>
+            </div>
+            <!-- YouTube Skipper -->
+            <div class="feature-item">
+                <span class="feature-icon">⏩</span>
+                <span class="feature-name">YT Hızlı Geç</span>
+                <label class="mini-switch"><input type="checkbox" id="t-youtubeSkipper" checked><span class="mini-slider round"></span></label>
+            </div>
+            <!-- Dark Mode -->
+            <div class="feature-item">
+                <span class="feature-icon">🌙</span>
+                <span class="feature-name">Karanlık Mod</span>
+                <label class="mini-switch"><input type="checkbox" id="t-darkMode"><span class="mini-slider round"></span></label>
+            </div>
+            <!-- Ghost Mode -->
+            <div class="feature-item">
+                <span class="feature-icon">👻</span>
+                <span class="feature-name">Hayalet Modu</span>
+                <label class="mini-switch"><input type="checkbox" id="t-ghostMode"><span class="mini-slider round"></span></label>
+            </div>
+            <!-- Paywall Bypasser -->
+            <div class="feature-item">
+                <span class="feature-icon">📰</span>
+                <span class="feature-name">Ödeme Duvarı Kırıcı</span>
+                <label class="mini-switch"><input type="checkbox" id="t-paywallBypasser"><span class="mini-slider round"></span></label>
+            </div>
+            
+            <div class="feature-item word-blocker-box" style="flex-direction: column; align-items: flex-start;">
+                <div style="display:flex; width: 100%; align-items: center; margin-bottom: 5px;">
+                    <span class="feature-icon">🚫</span>
+                    <span class="feature-name">Kelime Sansürü</span>
+                    <label class="mini-switch"><input type="checkbox" id="t-wordBlocker" checked><span class="mini-slider round"></span></label>
+                </div>
+                <input type="text" id="blocked-words" placeholder="Virgülle ayır (örn: bahis, kumar)" style="width: 100%; padding: 5px; font-size: 11px; border: 1px solid #ccc; border-radius: 4px;">
+            </div>
+        </div>
+        
+        <div class="footer">
+            Geliştiren: AAEConsole Team
+        </div>
+    </div>
+    <script src="popup.js"></script>
+</body>
+</html>

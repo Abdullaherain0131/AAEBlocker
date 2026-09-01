@@ -1,0 +1,40 @@
+{
+  "manifest_version": 2,
+  "name": "AAEBlocker",
+  "version": "2.0.0",
+  "description": "Yeni Nesil Reklam ve Çerez Engelleyici",
+  "author": "AAEConsole Team",
+  "developer": {
+    "name": "AAEConsole Team",
+    "url": "https://github.com/AAEConsole"
+  },
+  "icons": {
+    "48": "icons/logo.png",
+    "96": "icons/logo.png",
+    "128": "icons/logo.png"
+  },
+  "browser_action": {
+    "default_icon": "icons/logo.png",
+    "default_title": "AAEBlocker",
+    "default_popup": "popup.html"
+  },
+  "permissions": [
+    "webRequest",
+    "webRequestBlocking",
+    "<all_urls>",
+    "storage"
+  ],
+  "background": {
+    "scripts": ["background.js"]
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"],
+      "run_at": "document_idle"
+    }
+  ],
+  "web_accessible_resources": [
+    "icons/logo.png"
+  ]
+}

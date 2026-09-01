@@ -1,0 +1,73 @@
+/* AAEBlocker Cyberpunk Theme Overrides */
+:root {
+    --bg-color: #0b0f19 !important;
+    --fg-color: #00ffcc !important;
+    --primary-color: #ff00ff !important;
+    --surface-color: #1a1b26 !important;
+    --text-color: #00ffcc !important;
+    --font-family: "Courier New", Courier, monospace !important;
+}
+
+body, #uBO-popup-panel {
+    background-color: var(--bg-color) !important;
+    color: var(--text-color) !important;
+    font-family: var(--font-family) !important;
+    text-shadow: 0 0 2px var(--fg-color) !important;
+}
+
+/* Power button / Switch */
+#switch {
+    filter: drop-shadow(0 0 10px var(--primary-color)) !important;
+    transition: all 0.3s ease !important;
+}
+#switch .fa {
+    color: var(--primary-color) !important;
+}
+#switch:hover {
+    transform: scale(1.1) !important;
+    filter: drop-shadow(0 0 20px var(--primary-color)) !important;
+}
+
+/* Big number */
+#actionSelector span, #extraTools span {
+    color: var(--fg-color) !important;
+    text-shadow: 0 0 5px var(--fg-color) !important;
+}
+
+/* Buttons and icons */
+.button, .icon, .fa {
+    color: var(--fg-color) !important;
+}
+.button:hover, .icon:hover, .fa:hover {
+    color: var(--primary-color) !important;
+    text-shadow: 0 0 8px var(--primary-color) !important;
+}
+
+/* Panes and surfaces */
+#panes, #main, #sticky, #dashboard-nav, .pane {
+    background-color: var(--surface-color) !important;
+    border: 1px solid var(--fg-color) !important;
+    box-shadow: inset 0 0 10px rgba(0, 255, 204, 0.1) !important;
+}
+
+/* Hostname header */
+#hostname {
+    background: linear-gradient(90deg, var(--bg-color), var(--primary-color)) !important;
+    color: #fff !important;
+    border-bottom: 2px solid var(--fg-color) !important;
+    text-transform: uppercase !important;
+    letter-spacing: 2px !important;
+    font-weight: bold !important;
+}
+
+/* Scrollbars */
+::-webkit-scrollbar {
+    width: 8px !important;
+}
+::-webkit-scrollbar-track {
+    background: var(--bg-color) !important;
+}
+::-webkit-scrollbar-thumb {
+    background: var(--primary-color) !important;
+    border-radius: 4px !important;
+}
