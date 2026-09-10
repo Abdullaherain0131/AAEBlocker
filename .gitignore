@@ -5,3 +5,13 @@ node_modules/
 /dist/build/
 /tmp/
 .DS_Store
+AAEBlocker/models/aae-model.tflite
+AAEBlocker/js/aae-unified-omnicore-512.json
+AAEBlocker/omnicore-metadata.json
+AAEBlocker/mobile-tflite-metadata.json
+AAEBlocker/convert_to_tflite.py
+AAEBlocker/Dockerfile.tflite
+AAEBlocker/models/
+AAEBlocker_backup/
+ai_v2_weights.json
+src/js/aae-unified-omnicore.json

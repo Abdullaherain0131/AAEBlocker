@@ -1,40 +1,148 @@
 {
-  "manifest_version": 2,
-  "name": "AAEBlocker",
-  "version": "2.0.0",
-  "description": "Yeni Nesil Reklam ve Çerez Engelleyici",
   "author": "AAEConsole Team",
-  "developer": {
-    "name": "AAEConsole Team",
-    "url": "https://github.com/AAEConsole"
-  },
-  "icons": {
-    "48": "icons/logo.png",
-    "96": "icons/logo.png",
-    "128": "icons/logo.png"
+  "background": {
+    "page": "background.html"
   },
   "browser_action": {
-    "default_icon": "icons/logo.png",
+    "browser_style": false,
+    "default_area": "navbar",
+    "default_icon": {
+      "16": "img/icon_16.png",
+      "32": "img/icon_32.png",
+      "64": "img/icon_64.png"
+    },
     "default_title": "AAEBlocker",
-    "default_popup": "popup.html"
+    "default_popup": "popup-fenix.html"
   },
-  "permissions": [
-    "webRequest",
-    "webRequestBlocking",
-    "<all_urls>",
-    "storage"
-  ],
-  "background": {
-    "scripts": ["background.js"]
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "my@lafolsun.com",
+      "strict_min_version": "140.0",
+      "data_collection_permissions": {
+        "required": [
+          "none"
+        ]
+      }
+    },
+    "gecko_android": {
+      "strict_min_version": "142.0"
+    }
+  },
+  "commands": {
+    "_execute_browser_action": {},
+    "launch-element-zapper": {
+      "description": "__MSG_popupTipZapper__"
+    },
+    "launch-element-picker": {
+      "description": "__MSG_popupTipPicker__"
+    },
+    "launch-logger": {
+      "description": "__MSG_popupTipLog__"
+    },
+    "open-dashboard": {
+      "description": "__MSG_popupTipDashboard__"
+    },
+    "relax-blocking-mode": {
+      "description": "__MSG_relaxBlockingMode__"
+    },
+    "toggle-cosmetic-filtering": {
+      "description": "__MSG_toggleCosmeticFiltering__"
+    },
+    "toggle-javascript": {
+      "description": "__MSG_toggleJavascript__"
+    }
   },
   "content_scripts": [
     {
-      "matches": ["<all_urls>"],
-      "js": ["content.js"],
-      "run_at": "document_idle"
+      "matches": [
+        "http://*/*",
+        "https://*/*",
+        "file://*/*"
+      ],
+      "js": [
+        "/js/vapi.js",
+        "/js/vapi-client.js",
+        "/js/contentscript.js",
+        "/js/aae-wasm-loader.js",
+        "/js/lib/tfjs/tf.min.js",
+        "/js/lib/tfjs/tf-tflite.min.js",
+        "/js/aae-tflite-bridge.js",
+        "/js/aae-cookie-rejecter.js",
+        "/js/aae-skynet.js"
+      ],
+      "all_frames": true,
+      "match_about_blank": true,
+      "run_at": "document_start"
+    },
+    {
+      "matches": [
+        "https://easylist.to/*",
+        "https://*.fanboy.co.nz/*",
+        "https://filterlists.com/*",
+        "https://forums.lanik.us/*",
+        "https://github.com/*",
+        "https://*.github.io/*"
+      ],
+      "js": [
+        "/js/scriptlets/subscriber.js"
+      ],
+      "run_at": "document_idle",
+      "all_frames": false
+    },
+    {
+      "matches": [
+        "https://github.com/AAEConsole/*",
+        "https://aaeconsole.team/*",
+        "https://*.reddit.com/r/AAEBlocker/*"
+      ],
+      "js": [
+        "/js/scriptlets/updater.js"
+      ],
+      "run_at": "document_idle",
+      "all_frames": false
     }
   ],
+  "default_locale": "en",
+  "description": "__MSG_extShortDesc__",
+  "icons": {
+    "16": "img/icon_16.png",
+    "32": "img/icon_32.png",
+    "48": "img/icon_48.png",
+    "64": "img/icon_64.png",
+    "96": "img/icon_96.png",
+    "128": "img/icon_128.png"
+  },
+  "manifest_version": 2,
+  "name": "AAEBlocker",
+  "options_ui": {
+    "page": "aae-settings.html",
+    "open_in_tab": true
+  },
+  "permissions": [
+    "alarms",
+    "dns",
+    "menus",
+    "privacy",
+    "storage",
+    "tabs",
+    "unlimitedStorage",
+    "webNavigation",
+    "webRequest",
+    "webRequestBlocking",
+    "<all_urls>"
+  ],
+  "short_name": "AAEBlocker",
+  "sidebar_action": {
+    "default_title": "__MSG_statsPageName__",
+    "default_panel": "logger-ui.html",
+    "default_icon": "img/icon_32.png",
+    "open_at_install": false
+  },
+  "version": "1.9.15.101",
   "web_accessible_resources": [
-    "icons/logo.png"
+    "/web_accessible_resources/*",
+    "/img/logo.png",
+    "/js/aae-unified-omnicore-512.json",
+    "/js/lib/tfjs/*"
   ]
 }

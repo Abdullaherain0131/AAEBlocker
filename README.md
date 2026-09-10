@@ -2,22 +2,30 @@
   <a href="README.tr.md"><img src="https://img.shields.io/badge/Dil-T%C3%BCrk%C3%A7e-e44d26?style=for-the-badge&logo=google-translate&logoColor=white" alt="Türkçe"></a>
   <a href="README.md"><img src="https://img.shields.io/badge/Language-English-0052cc?style=for-the-badge&logo=google-translate&logoColor=white" alt="English"></a>
   <br><br>
-
-  <img src="https://raw.githubusercontent.com/gorhill/uBlock/master/assets/icon_128.png" width="128" alt="AAEBlocker Logo">
   
-  <h1>🛡️ AAEBlocker v9.0 🧠</h1>
-  <p><strong>AI-Powered, Autonomous, and Invincible Ad Blocker</strong></p>
+  <img src="https://media.giphy.com/media/xT9IgzoKnwFNmISR8I/giphy.gif" width="100%" height="200" style="object-fit: cover; border-radius: 15px; box-shadow: 0 0 20px #00ffcc, 0 0 40px #ff00ff;" alt="Matrix Cyber">
+  <br><br>
+
+  <img src="https://raw.githubusercontent.com/gorhill/uBlock/master/assets/icon_128.png" width="140" alt="AAEBlocker Logo" style="animation: pulse 2s infinite; filter: drop-shadow(0 0 20px #00ffcc);">
+  
+  <h1 style="color: #ff00ff; text-shadow: 0 0 10px #ff00ff;">🛡️ AAEBlocker v10.0.0 🧠</h1>
+  <p><strong style="color: #00ffcc; font-size: 1.2em;">AI-Powered, Autonomous, and Invincible Ad Blocker</strong></p>
   
   <p>
-    <a href="https://github.com/Abdullaherain0131/AAEBlocker/releases"><img src="https://img.shields.io/github/v/release/Abdullaherain0131/AAEBlocker?style=for-the-badge&color=blue" alt="Release"></a>
-    <img src="https://img.shields.io/badge/Platform-Firefox%20%7C%20Zen%20%7C%20Kiwi-orange?style=for-the-badge" alt="Platform">
-    <img src="https://img.shields.io/badge/AI-Perceptron%20Neural%20Net-brightgreen?style=for-the-badge&logo=openai" alt="AI Engine">
+    <a href="https://github.com/Abdullaherain0131/AAEBlocker/releases"><img src="https://img.shields.io/github/v/release/Abdullaherain0131/AAEBlocker?style=for-the-badge&color=ff00ff&labelColor=000000" alt="Release"></a>
+    <img src="https://img.shields.io/badge/Platform-Firefox%20%7C%20Zen%20%7C%20Kiwi-00ffcc?style=for-the-badge&labelColor=000000" alt="Platform">
+    <img src="https://img.shields.io/badge/AI-Multi--Layer%20Perceptron-ff3366?style=for-the-badge&logo=openai&labelColor=000000" alt="AI Engine">
   </p>
 
-  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=700&size=24&pause=1000&color=00FF99&background=00000000&center=true&vCenter=true&width=800&height=50&lines=Welcome+to+the+Future+of+Ad+Blocking;Powered+by+Machine+Learning;Collective+Hive-Mind+(Cloud+Sync)+Active;Zero-Delay+DOM+Eradication;Auto-Speed+Video+Ads+x16!" alt="Typing SVG" />
+  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=700&size=26&pause=1000&color=00FFCC&background=00000000&center=true&vCenter=true&width=800&height=50&lines=Welcome+to+the+Future+of+Ad+Blocking;Powered+by+Machine+Learning;Collective+Hive-Mind+(Cloud+Sync)+Active;Zero-Delay+DOM+Eradication;Absolute+Network+Level+Protection!" alt="Typing SVG" />
   
-  <img src="https://readme-typing-svg.herokuapp.com?font=Orbitron&weight=500&size=16&pause=2000&color=FF3366&center=true&vCenter=true&width=600&lines=>>>+Initializing+Neural+Network...;>>>+Connecting+to+Firebase+Realtime+DB...;>>>+Bypassing+Paywalls...;>>>+System+Ready." alt="Terminal Output" />
-
+  <img src="https://readme-typing-svg.herokuapp.com?font=Orbitron&weight=500&size=16&pause=2000&color=FF00FF&center=true&vCenter=true&width=600&lines=>>>+Initializing+Multi-Layer+Perceptron...;>>>+Connecting+to+Firebase+Realtime+DB...;>>>+Cracking+Anti-Adblock+Timers...;>>>+System+Ready." alt="Terminal Output" />
+  
+  <br><br>
+  <div style="display: flex; justify-content: center; gap: 20px;">
+    <img src="https://media.giphy.com/media/26tn33aiTi1jIGsE0/giphy.gif" width="300" style="border-radius: 10px; border: 2px solid #00ffcc;" alt="Code Animation">
+    <img src="https://media.giphy.com/media/VbK9h410lB2PjL5I8X/giphy.gif" width="300" style="border-radius: 10px; border: 2px solid #ff00ff;" alt="Network Animation">
+  </div>
   <br><br>
   
   <p><em>Developer: Abdullah Asım Ersin (Open-source built to help humanity.)</em></p>
@@ -84,5 +92,5 @@ The extension panel houses a true Hacker Terminal. Take full control:
 <div align="center">
   <img src="https://raw.githubusercontent.com/gorhill/uBlock/master/assets/icon_128.png" width="64" alt="AAEBlocker Small">
   <p><em>"Written to help people. Designed to make the internet cleaner, faster, and fairer."</em></p>
-  <p>🚀 <strong>MIT License | AAE_CORE v9.0</strong></p>
+  <p>🚀 <strong>MIT License | AAE_CORE v10.0.0</strong></p>
 </div>

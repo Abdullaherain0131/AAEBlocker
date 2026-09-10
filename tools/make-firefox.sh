@@ -23,7 +23,7 @@ cp platform/firefox/*.js   $DES/js/
 cp -R $DES/_locales/nb     $DES/_locales/no
 
 # Firefox/webext-specific
-rm $DES/img/icon_128.png
+
 
 echo "*** uBlock0.firefox: Generating meta..."
 python3 tools/make-firefox-meta.py $DES/

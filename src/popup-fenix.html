@@ -16,62 +16,59 @@
 
 <body class="loading" data-more="abcd">
 
-<!-- AAEBlocker CUSTOM UI OVERRIDE -->
-<div id="aae-custom-ui" style="width: 400px; min-height: 400px; background: #0b0f19; color: #00ffcc; font-family: 'Courier New', monospace; padding: 20px; box-sizing: border-box; border: 2px solid #ff00ff; box-shadow: inset 0 0 20px rgba(255,0,255,0.2);">
-    <div style="text-align: center; margin-bottom: 20px;">
-        <h1 style="margin: 0; color: #ff00ff; text-shadow: 0 0 10px #ff00ff; font-size: 24px; letter-spacing: 2px;">AAE_BLOCKER</h1>
-        <div style="font-size: 10px; color: #00ffcc; opacity: 0.7;">> SİSTEM DURUMU: ÇALIŞIYOR</div>
+<!-- AAEBlocker ULTRA UI OVERRIDE (V14 HUD) -->
+<div class="aae-ultra-hud" id="aae-custom-ui">
+    
+
+
+    <!-- Scanline Overlay -->
+    <div class="aae-scanlines"></div>
+    
+    <!-- Radar / World Scanning Animation -->
+    <div class="aae-radar-container">
+        <div class="aae-radar"></div>
+        <div class="aae-radar-text">KÜRESEL AĞ TARANIYOR...</div>
     </div>
     
-    <div style="display: flex; justify-content: center; margin-bottom: 30px;">
-        <button id="aae-power-btn" style="width: 120px; height: 120px; border-radius: 50%; background: #1a1b26; border: 4px solid #00ffcc; color: #00ffcc; font-size: 20px; font-weight: bold; cursor: pointer; box-shadow: 0 0 30px rgba(0,255,204,0.4); text-transform: uppercase; transition: all 0.3s ease;">
-            AKTİF
+    <div class="aae-hud-header" id="aae-hud-header">
+        <h1 class="aae-hud-title aae-title-glitch" data-text="AAE_BLOCKER">AAE_BLOCKER<span class="aae-version">V17</span></h1>
+        <div class="aae-hud-status" id="aae-hud-status">SİSTEM ÇEVRİMİÇİ</div>
+    </div>
+    
+    <div class="aae-reactor-container">
+        <div class="aae-reactor-ring-outer"></div>
+        <div class="aae-reactor-ring-inner"></div>
+        <button id="aae-power-btn" class="aae-reactor-core">
+            <span class="aae-core-text">AKTİF</span>
         </button>
     </div>
     
-    <div style="background: rgba(0, 255, 204, 0.1); border-left: 3px solid #00ffcc; padding: 10px; margin-bottom: 15px; font-size: 13px;">
-        <div style="margin-bottom: 5px;">> BU SİTEDE ENGELLENEN: <span id="aae-block-site" style="font-weight: bold; color:#ff00ff;">0</span></div>
-        <div>> TOPLAM ENGELLENEN: <span id="aae-block-total" style="font-weight: bold; color:#00ffcc;">0</span></div>
+    <div class="aae-stats-grid">
+        <div class="aae-stat-box aae-stat-site">
+            <div class="aae-stat-label">BU SİTE</div>
+            <div class="aae-stat-value" id="aae-block-site">0</div>
+        </div>
+        <div class="aae-stat-box aae-stat-total">
+            <div class="aae-stat-label">TOPLAM</div>
+            <div class="aae-stat-value" id="aae-block-total">0</div>
+        </div>
     </div>
 
-    <div style="display: flex; gap: 10px; margin-bottom: 10px;">
-        <button id="aae-btn-dashboard" style="flex: 1; padding: 8px; background: transparent; border: 1px solid #ff00ff; color: #ff00ff; cursor: pointer; transition: 0.3s; font-family: inherit; font-size:12px;">[ AYARLAR ]</button>
-        <button id="aae-btn-logger" style="flex: 1; padding: 8px; background: transparent; border: 1px solid #00ffcc; color: #00ffcc; cursor: pointer; transition: 0.3s; font-family: inherit; font-size:12px;">[ BAĞLANTI LOGLARI ]</button>
-    </div>
-    
-    <div style="display: flex; gap: 10px; margin-bottom: 10px;">
-        <button id="aae-btn-export" style="flex: 1; padding: 8px; background: transparent; border: 1px solid #ffff00; color: #ffff00; cursor: pointer; transition: 0.3s; font-family: inherit; font-size:12px;">[ ZEKAYI DIŞA AKTAR ]</button>
-        <button id="aae-btn-import" style="flex: 1; padding: 8px; background: transparent; border: 1px solid #ff9900; color: #ff9900; cursor: pointer; transition: 0.3s; font-family: inherit; font-size:12px;">[ ZEKAYI İÇE AKTAR ]</button>
+    <div class="aae-btn-grid">
+        <button id="aae-btn-dashboard" class="aae-hud-btn aae-btn-purple">[ AYARLAR ]</button>
+        <button id="aae-btn-logger" class="aae-hud-btn aae-btn-cyan">[ AĞ LOGLARI ]</button>
+        <button id="aae-btn-export" class="aae-hud-btn aae-btn-yellow">[ ZEKAYI DIŞA AKTAR ]</button>
+        <button id="aae-btn-import" class="aae-hud-btn aae-btn-orange">[ ZEKAYI İÇE AKTAR ]</button>
     </div>
     <input type="file" id="aae-import-file" style="display:none;" accept=".json">
     
-    <button id="aae-btn-ai" style="width: 100%; padding: 8px; background: rgba(0,200,83,0.1); border: 1px solid #00c853; color: #00c853; cursor: pointer; transition: 0.3s; font-family: inherit; font-size:12px; margin-bottom: 15px; font-weight: bold; box-shadow: 0 0 10px rgba(0,200,83,0.3);">[ AAE SİBER TERMİNAL (YEREL ÇEKİRDEK) ]</button>
-
-    <div style="text-align: center; font-size: 10px; opacity: 0.5;">
-        > DEVELOPED BY ABDULLAH ASIM ERSİN <
+    <div class="aae-hud-footer" style="display: flex; gap: 5px; margin-top: 10px;">
+        <button id="aae-btn-ai-train" class="aae-hud-btn aae-btn-orange" style="flex: 1; border-color: #f39c12; color: #f39c12; font-weight: bold; letter-spacing: 2px;">[ YAPAY ZEKA GÖRSEL EĞİTİM MODU ]</button>
     </div>
+
 </div>
 
-<!-- AAEBlocker LOCAL TERMINAL PANEL -->
-<div id="aae-ai-panel" style="display: none; width: 400px; min-height: 400px; background: #0b0f19; color: #00c853; font-family: 'Courier New', monospace; padding: 15px; box-sizing: border-box; border: 2px solid #00c853; box-shadow: inset 0 0 20px rgba(0,200,83,0.2); flex-direction: column;">
-    <div style="text-align: center; margin-bottom: 10px; border-bottom: 1px solid #00c853; padding-bottom: 10px;">
-        <h2 style="margin: 0; color: #00c853; font-size: 18px; text-shadow: 0 0 8px #00c853;">AAE_LOCAL_CORE v9.0</h2>
-        <div style="font-size: 10px; color: #00ffcc; opacity: 0.8; margin-top: 5px;">> GÜÇ: YEREL AĞ İŞLEMCİSİ (OFFLINE)</div>
-    </div>
-    
-    <div id="aae-ai-chat" style="flex: 1; min-height: 230px; max-height: 230px; overflow-y: auto; padding: 10px; font-size: 12px; border: 1px dashed #00c853; margin-bottom: 10px; background: rgba(0,200,83,0.05); display: flex; flex-direction: column; gap: 8px;">
-        <div style="color: #00c853; border-left: 2px solid #00c853; padding-left: 5px;">> AAE_CORE: Yerel terminale erişildi. Dış API bağlantıları kesildi. Sistem kendi kaynaklarıyla çalışıyor.<br>> Komut listesi için 'yardım' veya 'help' yazın.</div>
-    </div>
-    
-    <div style="display: flex; gap: 5px; margin-bottom: 10px;">
-        <input type="text" id="aae-ai-input" placeholder="root@aae:~# komut_gir" style="flex: 1; background: #1a1b26; border: 1px solid #00c853; color: #00ffcc; padding: 8px; font-family: inherit; font-size: 12px; outline: none;">
-        <button id="aae-ai-send" style="background: #00c853; color: #0b0f19; border: none; padding: 8px 15px; font-weight: bold; cursor: pointer; font-family: inherit; font-size: 12px;">ÇALIŞTIR</button>
-    </div>
-    
-    <div style="text-align: center;">
-        <button id="aae-ai-back" style="background: transparent; border: 1px solid #ff00ff; color: #ff00ff; padding: 5px 15px; font-size: 10px; cursor: pointer; font-family: inherit;">[ ANA MENÜYE DÖN ]</button>
-    </div>
-</div>
+
 
 <script src="js/aae-custom-popup.js"></script>
 
