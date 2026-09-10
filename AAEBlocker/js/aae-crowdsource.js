@@ -102,24 +102,25 @@
                     updates: pending
                 };
 
-                // Sunucuya POST isteği (Bu kısım arka plan servisinde çalışacak)
-                /*
+                // AAEBlocker Secret Network Token (Güvenlik)
+                const SECRET_NETWORK_TOKEN = "AAE_CORE_SECURE_TOKEN_2026_X9";
+
+                // Sunucuya POST isteği (Gerçek Ağ Entegrasyonu)
                 const response = await fetch(ENDPOINT, {
                     method: 'POST',
-                    headers: { 'Content-Type': 'application/json' },
+                    headers: { 
+                        'Content-Type': 'application/json',
+                        'X-AAE-Network-Token': SECRET_NETWORK_TOKEN
+                    },
                     body: JSON.stringify(payload)
                 });
 
                 if (response.ok) {
                     console.log("[AAE-Crowdsource] Gradientler başarıyla Kolektif Ağ'a iletildi!");
                     chrome.storage.local.set({ aae_pending_gradients: [] });
+                } else {
+                    console.warn("[AAE-Crowdsource] Sunucu hatası veya token geçersiz!");
                 }
-                */
-               // TODO: Kullanıcı kendi server url'sini girecek. Şimdilik simüle ediyoruz:
-               setTimeout(() => {
-                   console.log("[AAE-Crowdsource] Gradientler başarıyla Kolektif Ağ'a iletildi! (SIMULASYON)");
-                   chrome.storage.local.set({ aae_pending_gradients: [] });
-               }, 1000);
 
             } catch (e) {
                 console.warn("[AAE-Crowdsource] Sunucuya gönderim başarısız:", e);

@@ -3,10 +3,10 @@
   <a href="README.md"><img src="https://img.shields.io/badge/Language-English-0052cc?style=for-the-badge&logo=google-translate&logoColor=white" alt="English"></a>
   <br><br>
   
-  <img src="https://media.giphy.com/media/xT9IgzoKnwFNmISR8I/giphy.gif" width="100%" height="200" style="object-fit: cover; border-radius: 15px; box-shadow: 0 0 20px #00ffcc, 0 0 40px #ff00ff;" alt="Matrix Cyber">
+  <img src="https://media.giphy.com/media/l41YcWbE10n0rNIN2/giphy.gif" width="100%" style="max-height: 350px; object-fit: cover; border-radius: 15px; box-shadow: 0 0 20px #00ffcc, 0 0 40px #ff00ff;" alt="Cyber Matrix Shield">
   <br><br>
 
-  <img src="https://raw.githubusercontent.com/gorhill/uBlock/master/assets/icon_128.png" width="140" alt="AAEBlocker Logo" style="animation: pulse 2s infinite; filter: drop-shadow(0 0 20px #00ffcc);">
+  <img src="AAEBlocker/img/icon_128.png" width="180" alt="AAEBlocker Logo" style="animation: pulse 2s infinite; filter: drop-shadow(0 0 30px #00ffcc);">
   
   <h1 style="color: #ff00ff; text-shadow: 0 0 10px #ff00ff;">🛡️ AAEBlocker v11.0.0 🧠</h1>
   <p><strong style="color: #00ffcc; font-size: 1.2em;">The Ultimate AI-Powered, Decentralized Cyber Security Engine</strong></p>
