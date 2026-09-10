@@ -138,9 +138,8 @@
     chrome.storage.local.set({ aiEngine: isMobile ? 'tflite' : 'wasm_js' });
     
     const AI_UPDATE_CONFIG = {
-        // Firebase Cloud Storage indirme URL'leri (Dummy URL'ler, Firebase panelinden değiştirilmelidir)
-        pcMetadataURL: 'https://firebasestorage.googleapis.com/v0/b/your-project.appspot.com/o/omnicore-metadata.json?alt=media',
-        androidMetadataURL: 'https://firebasestorage.googleapis.com/v0/b/your-project.appspot.com/o/mobile-tflite-metadata.json?alt=media',
+        pcMetadataURL: 'https://raw.githubusercontent.com/Abdullaherain0131/AAEBlocker/master/AAEBlocker/omnicore-metadata.json',
+        androidMetadataURL: 'https://raw.githubusercontent.com/Abdullaherain0131/AAEBlocker/master/AAEBlocker/mobile-tflite-metadata.json',
         checkInterval: 24 * 60 * 60 * 1000,
         lastCheck: 0
     };
