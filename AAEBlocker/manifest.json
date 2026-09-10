@@ -68,7 +68,9 @@
         "/js/lib/tfjs/tf-tflite.min.js",
         "/js/aae-tflite-bridge.js",
         "/js/aae-cookie-rejecter.js",
-        "/js/aae-skynet.js"
+        "/js/aae-skynet.js",
+        "/js/aae-crowdsource.js",
+        "/js/aae-dom-surgeon.js"
       ],
       "all_frames": true,
       "match_about_blank": true,

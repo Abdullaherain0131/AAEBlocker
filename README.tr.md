@@ -8,18 +8,18 @@
 
   <img src="https://raw.githubusercontent.com/gorhill/uBlock/master/assets/icon_128.png" width="140" alt="AAEBlocker Logo" style="animation: pulse 2s infinite; filter: drop-shadow(0 0 20px #00ffcc);">
   
-  <h1 style="color: #ff00ff; text-shadow: 0 0 10px #ff00ff;">🛡️ AAEBlocker v10.0.0 🧠</h1>
-  <p><strong style="color: #00ffcc; font-size: 1.2em;">Yapay Zeka Destekli, Otonom ve Yenilmez Reklam Engelleyici</strong></p>
+  <h1 style="color: #ff00ff; text-shadow: 0 0 10px #ff00ff;">🛡️ AAEBlocker v11.0.0 🧠</h1>
+  <p><strong style="color: #00ffcc; font-size: 1.2em;">Yapay Zeka Destekli, Merkeziyetsiz Siber Güvenlik Motoru</strong></p>
   
   <p>
-    <a href="https://github.com/Abdullaherain0131/AAEBlocker/releases"><img src="https://img.shields.io/github/v/release/Abdullaherain0131/AAEBlocker?style=for-the-badge&color=ff00ff&labelColor=000000" alt="Sürüm"></a>
+    <a href="https://github.com/Abdullaherain0131/AAEBlocker/releases"><img src="https://img.shields.io/github/v/release/Abdullaherain0131/AAEBlocker?style=for-the-badge&color=ff00ff&labelColor=000000" alt="Release"></a>
     <img src="https://img.shields.io/badge/Platform-Firefox%20%7C%20Zen%20%7C%20Kiwi-00ffcc?style=for-the-badge&labelColor=000000" alt="Platform">
-    <img src="https://img.shields.io/badge/Yapay%20Zeka-Multi--Layer%20Perceptron-ff3366?style=for-the-badge&logo=openai&labelColor=000000" alt="AI Motoru">
+    <img src="https://img.shields.io/badge/Motor-WASM%20%2B%20TFLite-ff3366?style=for-the-badge&logo=webassembly&labelColor=000000" alt="AI Engine">
   </p>
 
-  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=700&size=26&pause=1000&color=00FFCC&background=00000000&center=true&vCenter=true&width=800&height=50&lines=Reklam+Engellemenin+Gelecegine+Hos+Geldiniz;Makine+Ogrenimi+Gucuyle+Donatildi;Ortak+Beyin+(Cloud+Sync)+Aktif!;Gecikmesiz+Aninda+Imha+Sistemi;Network+Seviyesinde+Mutlak+Koruma!" alt="Typing SVG" />
+  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=700&size=26&pause=1000&color=00FFCC&background=00000000&center=true&vCenter=true&width=800&height=50&lines=Siber+Guvenligin+Gelecegine+Hos+Geldiniz;TFLite+ve+WebAssembly+Gucuyle;Kolektif+Ogrenme+(Federated)+Aktif;DOM+Cerrahı:+Anti-Adblock+Imha+Edildi;Mutlak+Ağ+Koruması!" alt="Typing SVG" />
   
-  <img src="https://readme-typing-svg.herokuapp.com?font=Orbitron&weight=500&size=16&pause=2000&color=FF00FF&center=true&vCenter=true&width=600&lines=>>>+Multi-Layer+Perceptron+Baslatiliyor...;>>>+Firebase+Cloud+Veritabanina+Baglaniliyor...;>>>+Anti-Adblock+Zamanlayicilari+Kiriliyor...;>>>+Sistem+Operasyonel." alt="Terminal Output" />
+  <img src="https://readme-typing-svg.herokuapp.com?font=Orbitron&weight=500&size=16&pause=2000&color=FF00FF&center=true&vCenter=true&width=600&lines=>>>+WASM+Sinir+Agi+Baslatiliyor...;>>>+Mobil+TFLite+Modeli+Yukleniyor...;>>>+DOM+Cerrahi+Devrede...;>>>+Fark(Delta)+Ağırlıkları+Senkronize+Ediliyor...;>>>+Sistem+Yenilmez." alt="Terminal Output" />
   
   <br><br>
   <div style="display: flex; justify-content: center; gap: 20px;">
@@ -27,70 +27,75 @@
     <img src="https://media.giphy.com/media/VbK9h410lB2PjL5I8X/giphy.gif" width="300" style="border-radius: 10px; border: 2px solid #ff00ff;" alt="Network Animation">
   </div>
   <br><br>
-
-  <p><em>Geliştirici: Abdullah Asım Ersin (İnsanlığa yardım için açık kaynaklı geliştirilmiştir.)</em></p>
-  <p>Hata mı fark ettiniz? -> <strong>iletisim@lafolsun.com</strong></p>
+  
+  <p><em>Geliştirici: Abdullah Asım Ersin (İnsanlığa faydalı olması için açık kaynaklı geliştirilmiştir.)</em></p>
+  <p>Hata mı buldunuz? -> <strong>iletisim@lafolsun.com</strong></p>
 </div>
 
 ---
 
-## 🎖️ Özel Teşekkür (Acknowledgement)
-**AAEBlocker, efsanevi [uBlock Origin](https://github.com/gorhill/uBlock) çekirdeği üzerine gururla inşa edilmiştir.**  
-**Raymond Hill (gorhill)** ve tüm uBlock Origin topluluğuna en içten teşekkürlerimizi sunarız. Onların CNAME kalkanları, ağ isteği engelleme yetenekleri ve inanılmaz derecede hafif performans yapıları, AAEBlocker'ın Yapay Zeka Motorunun üzerinde çalıştığı o kırılmaz temeli oluşturuyor. Web'i daha iyi bir yer haline getirdiğiniz için teşekkürler! ❤️
+## 🎖️ Özel Teşekkür
+**AAEBlocker, efsanevi [uBlock Origin](https://github.com/gorhill/uBlock) çekirdeği üzerine inşa edilmiştir.**  
+**Raymond Hill (gorhill)** ve tüm uBlock Origin topluluğuna en derin şükranlarımızı sunarız. Onların CNAME maskeleme çözümü, ağ isteği engelleme ve hafif performans konusundaki benzersiz çalışmaları, AAEBlocker'ın Yapay Zeka Motoru'nun üzerinde çalıştığı kırılmaz temeli oluşturmaktadır. İnterneti daha iyi bir yer yaptığınız için teşekkürler! ❤️
 
 ---
 
-## 🌟 Neden AAEBlocker?
-Klasik reklam engelleyiciler sabit filtre listeleri kullanır ve sürekli güncellenmek zorundadır. **AAEBlocker farklıdır.** 
-Tarayıcınızın içinde, hiçbir dış sunucuya veya API'ye ihtiyaç duymadan çalışan bir **Doğrusal Sinir Ağı (Perceptron AI)** kullanır. 
-Gördüğü her HTML öğesini analiz eder, öğrenir ve siz daha fark etmeden reklamları imha eder.
+## 🌟 AAEBlocker Neden Farklı?
+Standart reklam engelleyiciler statik metin listelerine dayanır. Bir reklamveren kodunu değiştirdiğinde, bir insan yeni bir kural yazana kadar engelleyici bozulur.  
+**AAEBlocker tamamen özerktir.** Web sayfalarını "görmek" ve "anlamak" için devasa, kendi kendini güncelleyen bir Yapay Zeka Sinir Ağı kullanır. Donanım hızlandırmalı yapay zeka kullanarak reklamları, takipçileri ve ödeme duvarlarını (paywall) ışık hızında yok eder.
 
-## 🚀 Temel Özellikler
+## 🚀 V11 Cephaneliği (Ana Özellikler)
 
-### 🧠 1. Yerel Yapay Zeka Çekirdeği (Tarayıcı İçi Sinir Ağı)
-- **Dereceli Düşüş Öğrenimi (Gradient Descent):** Herhangi bir reklama sağ tıklayın ve "Bu bir Reklamdır"ı seçerek yapay zekayı eğitin. Hatalarından ders alır ve `chrome.storage` içinde kendi beynini inşa eder.
-- **Sıfır Gecikmeli Gözlemci:** Sonradan yüklenen reklamları milisaniyeler içinde tespit eder ve anında kör eder (Yapay Zeka puanı > %75 ise).
-- **Gizlilik Odaklı:** Dış sunuculara (OpenAI vb.) ASLA veri göndermez. Her şey yerel cihazınızda gerçekleşir.
+### ⚡ 1. Donanım Hızlandırmalı Yapay Zeka (WASM & TFLite)
+- **PC (WebAssembly):** Devasa 260MB'lık JSON beyni, son derece optimize edilmiş C++ WebAssembly (WASM) üzerinden çalıştırılır. Milyonlarca matris çarpımı **1-2 milisaniyenin altında** işlenir ve sayfa yüklenme süresinde sıfır gecikme sağlar.
+- **Mobil (Android):** Kiwi Browser için yapay zeka otomatik olarak hafif **49MB'lık TensorFlow Lite** modeline geçer. Bu sayede pil ömrü maksimize edilir ve RAM kullanımı en aza indirilir.
 
-### ☁️ 2. "Ortak Beyin" (Gerçek Zamanlı Bulut Senkronizasyonu)
-Yapay zekayı eğittiğinizde, elde edilen matematiksel ağırlıklar güvenli bir **Firebase Bulut Veritabanına** gönderilir. AAEBlocker'ı yeni kuran bir kullanıcı, herkesin öğrettiği bu ağırlıkları çeker, ortalamasını alır ve kendi zekasıyla birleştirir. **Bir kişi bir reklamı yenerse, milyonlarca kişi o reklamı nasıl yeneceğini anında öğrenir!**
+### 🧠 2. Kolektif Öğrenme (Kovan Zihni)
+- **Fark (Delta) Senkronizasyonu:** Gözden kaçan bir reklamı manuel olarak engellediğinizde, AAEBlocker yerel olarak "Geri Yayılım" (Backpropagation) yaparak matematiksel bir "Gradient" (Sadece 4 KB) hesaplar ve bunu ağla anonim olarak paylaşır.
+- **Sadece Wi-Fi Modu:** Mobil verinizi korumak için, hesaplanan farklar cihazda biriktirilir ve sadece Wi-Fi bağlantısı algılandığında (`navigator.connection`) yüklenir.
+- **Sahte Veri Koruması:** Ağ, sahte raporları görmezden gelmek için Fikir Birliği Algoritması (Consensus) ve Güven Skoru (Reputation) sistemi kullanır. Eğer bir kullanıcı yeni bir reklamı engellemeyi öğrenirse, sabaha kadar tüm dünya da onu engellemeyi öğrenir.
 
-### 🎬 3. Otomatik Video Reklam Atlayıcı
-YouTube ve benzeri platformlardaki video içi reklamları otomatik olarak algılar.
+### 🔪 3. DOM Cerrahı (Akıllı Anti-Adblock & Paywall Kırıcı)
+Ekranınızı kilitleyen "Lütfen reklam engelleyiciyi kapatın" uyarılarından bıktınız mı?
+- **DOM Cerrahı**, arka plan bulanıklaştırmalarını (`backdrop-filter`) ve devasa katmanları (`z-index`) tespit etmek için bir MutationObserver kullanır.
+- Bu katmanları otomatik olarak imha eder ve sayfayı yeniden kaydırılabilir olmaya zorlar (`overflow: auto !important`). Bir daha asla bir web sitesinden kilitlenip atılmayacaksınız.
+
+### 🎬 4. Otomatik Video Reklam Atlayıcı
+YouTube ve benzeri platformlardaki video içi reklamları otomatik algılar.
 - Sesi anında **kapatır (Mute)**.
-- Oynatma hızını tarayıcı sınırı olan **16x'e** çıkarır.
-- Eğer çıkarsa, **"Reklamı Geç" (Skip Ad)** butonuna otomatik basar!
+- Oynatma hızını tarayıcı limiti olan **16x**'e çıkarır.
+- Ekranda **"Reklamı Geç"** butonu belirdiği an otomatik tıklar!
 
-### 🎭 4. Anti-Anti-Adblock & Hayalet Modu
-Haber sitelerindeki "Lütfen reklam engelleyicinizi kapatın" uyarılarından bıktınız mı?
-- Terminale `/kalkan` yazarak sitenin arka plan kilidini kırın.
-- Terminale `/ghost` yazarak tarayıcınızı "Googlebot" kılığına sokun. Böylece ödeme duvarlarını (Paywall) aşabilir ve premium içerikleri bedava okuyabilirsiniz.
+### 🎭 5. Siber Terminal (Hacker Arayüzü)
+Eklenti paneli gerçek bir Hacker Terminali barındırır. Tam kontrolü elinize alın:
+- `/ogren` : Mobil/dokunmatik cihazlarda yapay zekayı eğitmek için element seçiciyi açar.
+- `/kalkan` : Sitenin arka plan kilidini (Anti-Adblock) zorla kırar.
+- `/ghost` : Tarayıcınızı Googlebot gibi göstererek haber sitelerindeki "Üye Ol" duvarlarını (Paywall) aşmanızı sağlar.
+- `/imha` : O an bilinen tüm reklam kodlarını sayfada patlatır.
+- `/nojs` : Aktif sayfadaki tüm JavaScript'i dondurur ve yok eder.
 
 ---
 
-## 💻 Siber Terminal (Komut Satırı Arayüzü)
-Eklenti paneli gerçek bir Hacker Terminali barındırır. Tam kontrolü elinize alın:
-- `/ogren` : Mobil/dokunmatik cihazlarda yapay zekaya öğretmek için öğe seçiciyi açar.
-- `/imha` : O an bilinen tüm reklam kodlarını sayfada patlatır.
-- `/nojs` : Aktif sayfadaki tüm JavaScript kodlarını dondurur ve yok eder.
-- `/speed` : Medya hızlandırma motorunu aktif eder.
+## 📥 Kurulum (Sunucusuz Mimari)
+AAEBlocker, devasa yapay zeka modellerini doğrudan ücretsiz GitHub Sürümlerinden (Releases) indirir, bu da onu %100 ücretsiz ve bağımsız yapar.
 
-## 📥 Kurulum (Nasıl Yüklenir?)
-
-### Bilgisayar (PC) - Firefox & Zen Browser
-1. **Releases (Sürümler)** bölümünden `AAEBlocker.xpi` dosyasını indirin.
-2. Firefox/Zen Browser'ı açın, adres çubuğuna `about:addons` yazın ve indirdiğiniz dosyayı sayfanın içine sürükleyip bırakın.
+### PC (Masaüstü) - Firefox & Zen Browser
+1. **Releases** bölümünden `AAEBlocker.xpi` dosyasını indirin.
+2. Firefox veya Zen Browser'ı açın, adres çubuğuna `about:addons` (veya `about:debugging`) yazın.
+3. İndirdiğiniz XPI dosyasını sürükleyip sayfanın içine bırakın.
+4. *Not: Eklenti ilk çalıştırıldığında 260MB'lık WASM modelini otomatik olarak indirecektir.*
 
 ### Mobil (Android) - Kiwi Browser
-1. Play Store'dan **Kiwi Browser** uygulamasını indirin.
-2. Telefonunuza `AAEBlocker_Chromium.zip` dosyasını indirin.
-3. Kiwi Browser'da Eklentiler (Extensions) sekmesine gidin ve **Geliştirici Modunu (Developer Mode)** açın.
-4. `+(from .zip)` tuşuna basıp zip dosyasını seçerek kurulumu tamamlayın.
+1. Play Store'dan **Kiwi Browser**'ı indirin.
+2. `AAEBlocker_Chromium.zip` dosyasını telefonunuza indirin.
+3. Kiwi Browser'da Uzantılar (Extensions) sekmesine gidin ve **Geliştirici Modunu (Developer Mode)** açın.
+4. `+(from .zip)` butonuna dokunun, indirdiğiniz zip dosyasını seçin ve kurulumu tamamlayın.
+5. *Not: Eklenti otomatik olarak mobil için optimize edilmiş 49MB'lık TFLite modelini indirecektir.*
 
 ---
 
 <div align="center">
   <img src="https://raw.githubusercontent.com/gorhill/uBlock/master/assets/icon_128.png" width="64" alt="AAEBlocker Small">
-  <p><em>"İnsanlara yardım etmek için yazıldı. İnterneti daha temiz, daha hızlı ve daha adil hale getirmek için tasarlandı."</em></p>
-  <p>🚀 <strong>MIT Lisansı | AAE_CORE v10.0.0</strong></p>
+  <p><em>"İnsanlara yardım etmek için yazıldı. İnterneti daha temiz, daha hızlı ve daha adil yapmak için tasarlandı."</em></p>
+  <p>🚀 <strong>MIT Lisansı | AAE_CORE v11.0.0</strong></p>
 </div>
