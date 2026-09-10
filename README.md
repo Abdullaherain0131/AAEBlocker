@@ -3,7 +3,7 @@
   <a href="README.md"><img src="https://img.shields.io/badge/Language-English-0052cc?style=for-the-badge&logo=google-translate&logoColor=white" alt="English"></a>
   <br><br>
   
-  <img src="https://media.giphy.com/media/l41YcWbE10n0rNIN2/giphy.gif" width="100%" style="max-height: 350px; object-fit: cover; border-radius: 15px; box-shadow: 0 0 20px #00ffcc, 0 0 40px #ff00ff;" alt="Cyber Matrix Shield">
+  <img src="https://media.giphy.com/media/xT9IgzoKnwFNmISR8I/giphy.gif" width="100%" style="object-fit: cover; border-radius: 15px; box-shadow: 0 0 20px #00ffcc, 0 0 40px #ff00ff;" alt="Matrix Cyber">
   <br><br>
 
   <img src="AAEBlocker/img/icon_128.png" width="180" alt="AAEBlocker Logo" style="animation: pulse 2s infinite; filter: drop-shadow(0 0 30px #00ffcc);">
@@ -15,6 +15,7 @@
     <a href="https://github.com/Abdullaherain0131/AAEBlocker/releases"><img src="https://img.shields.io/github/v/release/Abdullaherain0131/AAEBlocker?style=for-the-badge&color=ff00ff&labelColor=000000" alt="Release"></a>
     <img src="https://img.shields.io/badge/Platform-Firefox%20%7C%20Zen%20%7C%20Kiwi-00ffcc?style=for-the-badge&labelColor=000000" alt="Platform">
     <img src="https://img.shields.io/badge/Engine-WASM%20%2B%20TFLite-ff3366?style=for-the-badge&logo=webassembly&labelColor=000000" alt="AI Engine">
+    <img src="https://img.shields.io/badge/Database-Firebase%20Realtime-FFCA28?style=for-the-badge&logo=firebase&labelColor=000000" alt="Firebase">
   </p>
 
   <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=700&size=26&pause=1000&color=00FFCC&background=00000000&center=true&vCenter=true&width=800&height=50&lines=Welcome+to+the+Future+of+Cyber+Security;Powered+by+TFLite+%26+WebAssembly;Federated+Collective+Learning+Active;DOM+Surgeon:+Anti-Adblock+Destroyed;Absolute+Network+Level+Protection!" alt="Typing SVG" />
@@ -51,11 +52,15 @@ Standard ad blockers rely on static text lists. When an advertiser changes their
 - **Mobile (TFLite):** For Android (Kiwi Browser), the AI automatically switches to a lightweight 49MB **TensorFlow Lite** model, maximizing battery life and minimizing RAM usage.
 
 ### 🧠 2. Federated Learning (The Hive-Mind)
+<div align="center"><img src="https://media.giphy.com/media/13HgwGsXF0aiGY/giphy.gif" width="400" style="border-radius: 10px; margin: 10px 0;" alt="Neural Network Nodes"></div>
+
 - **Delta/Gradient Sync:** When you manually block an undetected ad, AAEBlocker calculates a mathematical "Gradient" (just 4 KB) using local backpropagation and shares it anonymously with the network.
 - **Wi-Fi Only Mode:** Gradients are stored locally and only uploaded when a Wi-Fi connection is detected (`navigator.connection`), saving your cellular data.
 - **Data Poisoning Defense:** The network uses a Consensus Algorithm and a Reputation System to ignore fake reports. If one user learns to block a new ad, the entire world learns it by morning.
 
 ### 🔪 3. DOM Surgeon (Smart Anti-Adblock & Paywall Cracker)
+<div align="center"><img src="https://media.giphy.com/media/YQitE4YNQBroM/giphy.gif" width="400" style="border-radius: 10px; margin: 10px 0;" alt="Cyber Surgery"></div>
+
 Tired of "Please disable your ad blocker" popups locking your screen?
 - The **DOM Surgeon** uses a MutationObserver to detect background blurring (`backdrop-filter`) and massive `z-index` overlays.
 - It automatically annihilates these overlays and forces the page to become scrollable again (`overflow: auto !important`). You'll never be locked out of a website again.

@@ -93,13 +93,16 @@
             console.log(`[AAE-Crowdsource] ${pending.length} adet gradient sunucuya gönderiliyor...`);
 
             try {
-                // Firebase Realtime Database / Sunucu API Endpoint (Örnek URL)
-                const ENDPOINT = "https://your-firebase-database.firebaseio.com/gradients.json";
+                // Firebase Realtime Database REST API (ÜCRETSİZ)
+                // KENDİ VERİTABANINIZ İÇİN BURAYI DEĞİŞTİRİN:
+                const FIREBASE_PROJECT_ID = "aae-blocker-v11"; // Firebase Proje ID'nizi buraya yazın
+                const ENDPOINT = `https://${FIREBASE_PROJECT_ID}-default-rtdb.firebaseio.com/gradients.json`;
                 
                 // Güvenli ve küçük boyutlu payload
                 const payload = {
                     client_id: await getOrCreateClientId(),
-                    updates: pending
+                    updates: pending,
+                    timestamp: { ".sv": "timestamp" } // Firebase sunucu saati
                 };
 
                 // AAEBlocker Secret Network Token (Güvenlik)

@@ -3,7 +3,7 @@
   <a href="README.md"><img src="https://img.shields.io/badge/Language-English-0052cc?style=for-the-badge&logo=google-translate&logoColor=white" alt="English"></a>
   <br><br>
   
-  <img src="https://media.giphy.com/media/l41YcWbE10n0rNIN2/giphy.gif" width="100%" style="max-height: 350px; object-fit: cover; border-radius: 15px; box-shadow: 0 0 20px #00ffcc, 0 0 40px #ff00ff;" alt="Cyber Matrix Shield">
+  <img src="https://media.giphy.com/media/xT9IgzoKnwFNmISR8I/giphy.gif" width="100%" style="object-fit: cover; border-radius: 15px; box-shadow: 0 0 20px #00ffcc, 0 0 40px #ff00ff;" alt="Matrix Cyber">
   <br><br>
 
   <img src="AAEBlocker/img/icon_128.png" width="180" alt="AAEBlocker Logo" style="animation: pulse 2s infinite; filter: drop-shadow(0 0 30px #00ffcc);">
@@ -15,6 +15,7 @@
     <a href="https://github.com/Abdullaherain0131/AAEBlocker/releases"><img src="https://img.shields.io/github/v/release/Abdullaherain0131/AAEBlocker?style=for-the-badge&color=ff00ff&labelColor=000000" alt="Release"></a>
     <img src="https://img.shields.io/badge/Platform-Firefox%20%7C%20Zen%20%7C%20Kiwi-00ffcc?style=for-the-badge&labelColor=000000" alt="Platform">
     <img src="https://img.shields.io/badge/Motor-WASM%20%2B%20TFLite-ff3366?style=for-the-badge&logo=webassembly&labelColor=000000" alt="AI Engine">
+    <img src="https://img.shields.io/badge/Database-Firebase%20Realtime-FFCA28?style=for-the-badge&logo=firebase&labelColor=000000" alt="Firebase">
   </p>
 
   <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=700&size=26&pause=1000&color=00FFCC&background=00000000&center=true&vCenter=true&width=800&height=50&lines=Siber+Guvenligin+Gelecegine+Hos+Geldiniz;TFLite+ve+WebAssembly+Gucuyle;Kolektif+Ogrenme+(Federated)+Aktif;DOM+Cerrahı:+Anti-Adblock+Imha+Edildi;Mutlak+Ağ+Koruması!" alt="Typing SVG" />
@@ -51,11 +52,15 @@ Standart reklam engelleyiciler statik metin listelerine dayanır. Bir reklamvere
 - **Mobil (Android):** Kiwi Browser için yapay zeka otomatik olarak hafif **49MB'lık TensorFlow Lite** modeline geçer. Bu sayede pil ömrü maksimize edilir ve RAM kullanımı en aza indirilir.
 
 ### 🧠 2. Kolektif Öğrenme (Kovan Zihni)
+<div align="center"><img src="https://media.giphy.com/media/13HgwGsXF0aiGY/giphy.gif" width="400" style="border-radius: 10px; margin: 10px 0;" alt="Neural Network Nodes"></div>
+
 - **Fark (Delta) Senkronizasyonu:** Gözden kaçan bir reklamı manuel olarak engellediğinizde, AAEBlocker yerel olarak "Geri Yayılım" (Backpropagation) yaparak matematiksel bir "Gradient" (Sadece 4 KB) hesaplar ve bunu ağla anonim olarak paylaşır.
 - **Sadece Wi-Fi Modu:** Mobil verinizi korumak için, hesaplanan farklar cihazda biriktirilir ve sadece Wi-Fi bağlantısı algılandığında (`navigator.connection`) yüklenir.
 - **Sahte Veri Koruması:** Ağ, sahte raporları görmezden gelmek için Fikir Birliği Algoritması (Consensus) ve Güven Skoru (Reputation) sistemi kullanır. Eğer bir kullanıcı yeni bir reklamı engellemeyi öğrenirse, sabaha kadar tüm dünya da onu engellemeyi öğrenir.
 
 ### 🔪 3. DOM Cerrahı (Akıllı Anti-Adblock & Paywall Kırıcı)
+<div align="center"><img src="https://media.giphy.com/media/YQitE4YNQBroM/giphy.gif" width="400" style="border-radius: 10px; margin: 10px 0;" alt="Cyber Surgery"></div>
+
 Ekranınızı kilitleyen "Lütfen reklam engelleyiciyi kapatın" uyarılarından bıktınız mı?
 - **DOM Cerrahı**, arka plan bulanıklaştırmalarını (`backdrop-filter`) ve devasa katmanları (`z-index`) tespit etmek için bir MutationObserver kullanır.
 - Bu katmanları otomatik olarak imha eder ve sayfayı yeniden kaydırılabilir olmaya zorlar (`overflow: auto !important`). Bir daha asla bir web sitesinden kilitlenip atılmayacaksınız.
