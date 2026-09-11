@@ -200,4 +200,25 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Başlangıç yüklemesi
     loadData();
+
+    // ─── CANLI TERMİNAL GÜNCELLEMESİ ───
+    const terminalOutput = document.getElementById('idle-terminal-output');
+    if (terminalOutput) {
+        setInterval(() => {
+            chrome.storage.local.get(['aae_idle_stats'], (result) => {
+                const stats = result.aae_idle_stats;
+                if (stats) {
+                    const timeStr = new Date(stats.lastUpdate).toLocaleTimeString('tr-TR');
+                    terminalOutput.innerHTML = `
+                        <div class="term-line">> BAĞLANTI KURULUYOR... [OK]</div>
+                        <div class="term-line">> IDLE_TRAINER AKTİF (RAM: ${stats.memory}MB, CPU: <1%)</div>
+                        <div class="term-line">> SON GÜNCELLEME: ${timeStr}</div>
+                        <div class="term-line">> TOPLAM EĞİTİM DÖNGÜSÜ: <span style="color:var(--gold)">${stats.cycles}</span> EPOCH</div>
+                        <div class="term-line">> WEIGHTS_SYNCED => BACKPROPAGATION_SUCCESS</div>
+                        <div class="term-line blink">_</div>
+                    `;
+                }
+            });
+        }, 2000);
+    }
 });

@@ -261,5 +261,33 @@
         }
     }
 
+    // ─── 5. OTONOM IDLE TRAINING (Arka Plan Yapay Zeka Gelişimi) ───
+    try {
+        const idleTrainer = new Worker('js/aae-idle-trainer.js');
+        
+        idleTrainer.onmessage = function(e) {
+            if (e.data.type === 'WEIGHTS_UPDATED') {
+                log(`[Idle Trainer] Epoch: ${e.data.cycles} | Bellek: ${e.data.memory} MB`);
+                // En güncel beyin versiyonunu ve istatistikleri local storage'a yaz (Ayarlar sayfasındaki terminal için)
+                chrome.storage.local.set({
+                    aae_idle_stats: {
+                        cycles: e.data.cycles,
+                        memory: e.data.memory,
+                        lastUpdate: Date.now()
+                    }
+                });
+                
+                // İsteğe bağlı: Ağırlıkları belirli aralıklarla indexedDB'ye de yazabiliriz.
+                // saveBrainToIDB(e.data.weights); 
+            }
+        };
+
+        // Worker'ı başlat
+        idleTrainer.postMessage({ type: 'START_IDLE_TRAINING' });
+        log('Idle AI Trainer (Web Worker) başlatıldı.');
+    } catch (err) {
+        log('Web Worker başlatılamadı (Muhtemelen yol veya izin sorunu):', err);
+    }
+
     log('Background Engine hazır.');
 })();
