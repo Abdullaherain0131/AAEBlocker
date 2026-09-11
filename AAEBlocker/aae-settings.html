@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AAEBlocker Ayarları</title>
+    <title data-i18n="aaeSettingsTitle">AAEBlocker Ayarları</title>
     <!-- Google Fonts eklemesi Orbitron ve Inter için -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Orbitron:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/aae-settings.css">
@@ -18,25 +18,25 @@
             </div>
             <div class="system-status">
                 <span class="status-indicator"></span>
-                Sistem Çevrimiçi
+                <span data-i18n="aaeSystemOnline">Sistem Çevrimiçi</span>
             </div>
         </header>
 
         <main>
             <!-- AI Yapay Zeka Ayarları -->
             <section class="settings-section">
-                <h2 class="section-title">AI Yapay Zeka Ayarları</h2>
+                <h2 class="section-title" data-i18n="aaeAiSettings">AI Yapay Zeka Ayarları</h2>
                 
                 <div class="setting-item slider-item">
                     <div class="setting-info">
-                        <label for="threshold">AI Agresiflik Seviyesi</label>
+                        <label for="threshold" data-i18n="aaeAggressiveLevel">AI Agresiflik Seviyesi</label>
                         <span id="threshold-val" class="value-display">85%</span>
                     </div>
                     <input type="range" id="threshold" min="0.5" max="0.99" step="0.01" value="0.85">
                 </div>
 
                 <div class="setting-item toggle-item">
-                    <label for="enableSkynet">Yapay Zeka Motoru</label>
+                    <label for="enableSkynet" data-i18n="aaeSkynetEngine">Yapay Zeka Motoru</label>
                     <label class="toggle-switch">
                         <input type="checkbox" id="enableSkynet" checked>
                         <span class="slider round"></span>
@@ -44,24 +44,32 @@
                 </div>
 
                 <div class="setting-item toggle-item">
-                    <label for="enableWASM">WASM Hızlandırma</label>
+                    <label for="enableWASM" data-i18n="aaeWasmAcceleration">WASM Hızlandırma</label>
                     <label class="toggle-switch">
                         <input type="checkbox" id="enableWASM" checked>
                         <span class="slider round"></span>
                     </label>
                 </div>
 
+                <div class="setting-item toggle-item">
+                    <label for="enableVisionAI" data-i18n="aaeVisionAI">Vision AI (Görüntü İşleme)</label>
+                    <label class="toggle-switch">
+                        <input type="checkbox" id="enableVisionAI" checked>
+                        <span class="slider round"></span>
+                    </label>
+                </div>
+
                 <div class="info-box">
                     <div class="info-row">
-                        <span>Beyin Versiyonu:</span>
+                        <span data-i18n="aaeBrainVersionLabel">Beyin Versiyonu:</span>
                         <span id="brain-version-display">Yükleniyor...</span>
                     </div>
                     <div class="info-row">
-                        <span>Son Güncelleme:</span>
+                        <span data-i18n="aaeLastUpdateLabel">Son Güncelleme:</span>
                         <span id="last-update-display">Yükleniyor...</span>
                     </div>
                     <div class="info-row">
-                        <span>Engellenen Reklam (AI):</span>
+                        <span data-i18n="aaeAdsBlockedLabel">Engellenen Reklam (AI):</span>
                         <span id="ai-stats-display">0</span>
                     </div>
                 </div>
@@ -82,10 +90,10 @@
 
             <!-- Koruma Ayarları -->
             <section class="settings-section">
-                <h2 class="section-title">Koruma Ayarları</h2>
+                <h2 class="section-title" data-i18n="aaeProtectionSettings">Koruma Ayarları</h2>
                 
                 <div class="setting-item toggle-item">
-                    <label for="enableAntiAdblock">Anti-Adblock Savunma</label>
+                    <label for="enableAntiAdblock" data-i18n="aaeAntiAdblock">Anti-Adblock Savunma</label>
                     <label class="toggle-switch">
                         <input type="checkbox" id="enableAntiAdblock">
                         <span class="slider round"></span>
@@ -93,7 +101,7 @@
                 </div>
 
                 <div class="setting-item toggle-item">
-                    <label for="enableCookieReject">Otomatik Çerez Reddi</label>
+                    <label for="enableCookieReject" data-i18n="aaeCookieReject">Otomatik Çerez Reddi</label>
                     <label class="toggle-switch">
                         <input type="checkbox" id="enableCookieReject">
                         <span class="slider round"></span>
@@ -101,7 +109,7 @@
                 </div>
 
                 <div class="setting-item toggle-item">
-                    <label for="enableVideoSkip">Video Reklam Atlama</label>
+                    <label for="enableVideoSkip" data-i18n="aaeVideoSkip">Video Reklam Atlama</label>
                     <label class="toggle-switch">
                         <input type="checkbox" id="enableVideoSkip">
                         <span class="slider round"></span>
@@ -109,7 +117,7 @@
                 </div>
 
                 <div class="setting-item toggle-item">
-                    <label for="enableAntiFingerprint">Parmak İzi Koruması</label>
+                    <label for="enableAntiFingerprint" data-i18n="aaeAntiFingerprint">Parmak İzi Koruması</label>
                     <label class="toggle-switch">
                         <input type="checkbox" id="enableAntiFingerprint">
                         <span class="slider round"></span>
@@ -117,7 +125,7 @@
                 </div>
 
                 <div class="setting-item toggle-item">
-                    <label for="enablePaywallCrack">Paywall Kırıcı</label>
+                    <label for="enablePaywallCrack" data-i18n="aaePaywallCrack">Paywall Kırıcı</label>
                     <label class="toggle-switch">
                         <input type="checkbox" id="enablePaywallCrack">
                         <span class="slider round"></span>
@@ -125,7 +133,7 @@
                 </div>
 
                 <div class="setting-item toggle-item">
-                    <label for="enableLinkDecloaker">Link Gizleme Tespit</label>
+                    <label for="enableLinkDecloaker" data-i18n="aaeLinkDecloaker">Link Gizleme Tespit</label>
                     <label class="toggle-switch">
                         <input type="checkbox" id="enableLinkDecloaker">
                         <span class="slider round"></span>
@@ -135,28 +143,28 @@
 
             <!-- Kelime Sansürü -->
             <section class="settings-section">
-                <h2 class="section-title">Kelime Sansürü</h2>
+                <h2 class="section-title" data-i18n="aaeWordCensor">Kelime Sansürü</h2>
                 <div class="setting-item column-item">
-                    <label for="censored-words">Sansürlenecek kelimeleri girin (Her satıra bir tane):</label>
+                    <label for="censored-words" data-i18n="aaeCensoredWordsPlaceholder">Sansürlenecek kelimeleri girin (Her satıra bir tane):</label>
                     <textarea id="censored-words" rows="5" placeholder="Örn: kumar&#10;bahis"></textarea>
-                    <button id="save-words-btn" class="action-btn">Kaydet</button>
+                    <button id="save-words-btn" class="action-btn" data-i18n="aaeSaveWords">Kaydet</button>
                     <span id="save-words-status" class="status-text"></span>
                 </div>
             </section>
 
             <!-- Crowdsource Ayarları -->
             <section class="settings-section">
-                <h2 class="section-title">Crowdsource Ayarları</h2>
+                <h2 class="section-title" data-i18n="aaeCrowdsourceSettings">Crowdsource Ayarları</h2>
                 <div class="setting-item toggle-item">
-                    <label for="enableCrowdsource">Topluluk Öğrenme Ağı</label>
+                    <label for="enableCrowdsource" data-i18n="aaeCrowdsourceNetwork">Topluluk Öğrenme Ağı</label>
                     <label class="toggle-switch">
                         <input type="checkbox" id="enableCrowdsource">
                         <span class="slider round"></span>
                     </label>
                 </div>
-                <p class="description-text">Aktifleştirildiğinde, keşfedilen yeni reklam seçicileri diğer kullanıcılarla anonim olarak paylaşılır.</p>
+                <p class="description-text" data-i18n="aaeCrowdsourceDesc">Aktifleştirildiğinde, keşfedilen yeni reklam seçicileri diğer kullanıcılarla anonim olarak paylaşılır.</p>
                 <div class="setting-item column-item" style="margin-top: 15px; border-top: 1px solid var(--surface-border); padding-top: 15px;">
-                    <button id="sync-network-btn" class="action-btn" style="width: 100%; border-color: var(--accent-color); color: var(--accent-color);">Kolektif Ağı İndir (Senkronize Et)</button>
+                    <button id="sync-network-btn" class="action-btn" style="width: 100%; border-color: var(--accent-color); color: var(--accent-color);" data-i18n="aaeDownloadNetwork">Kolektif Ağı İndir (Senkronize Et)</button>
                     <div id="sync-progress-container" style="display: none; margin-top: 10px; width: 100%;">
                         <div style="display: flex; justify-content: space-between; font-size: 11px; margin-bottom: 5px;">
                             <span id="sync-status-text">İndiriliyor...</span>
@@ -171,15 +179,15 @@
 
             <!-- Veri Yönetimi -->
             <section class="settings-section data-management">
-                <h2 class="section-title">Veri Yönetimi</h2>
+                <h2 class="section-title" data-i18n="aaeDataManagement">Veri Yönetimi</h2>
                 <div class="button-group">
-                    <button id="export-brain-btn" class="action-btn">Beyin Dışa Aktar</button>
+                    <button id="export-brain-btn" class="action-btn" data-i18n="aaeExportBrain">Beyin Dışa Aktar</button>
                     
-                    <button id="import-brain-btn" class="action-btn">Beyin İçe Aktar</button>
+                    <button id="import-brain-btn" class="action-btn" data-i18n="aaeImportBrain">Beyin İçe Aktar</button>
                     <input type="file" id="import-file" accept=".json" style="display: none;">
                     
-                    <button id="reset-selectors-btn" class="action-btn warning-btn">Öğrenilmiş Seçicileri Sıfırla</button>
-                    <button id="reset-stats-btn" class="action-btn danger-btn">Tüm İstatistikleri Sıfırla</button>
+                    <button id="reset-selectors-btn" class="action-btn warning-btn" data-i18n="aaeResetSelectors">Öğrenilmiş Seçicileri Sıfırla</button>
+                    <button id="reset-stats-btn" class="action-btn danger-btn" data-i18n="aaeResetStats">Tüm İstatistikleri Sıfırla</button>
                 </div>
             </section>
         </main>

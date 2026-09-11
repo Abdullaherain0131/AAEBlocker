@@ -70,7 +70,8 @@
         "/js/aae-cookie-rejecter.js",
         "/js/aae-skynet.js",
         "/js/aae-crowdsource.js",
-        "/js/aae-dom-surgeon.js"
+        "/js/aae-dom-surgeon.js",
+        "/js/aae-vision.js"
       ],
       "all_frames": true,
       "match_about_blank": true,
@@ -140,7 +141,7 @@
     "default_icon": "img/icon_32.png",
     "open_at_install": false
   },
-  "version": "1.9.15.101",
+  "version": "11.0.0",
   "web_accessible_resources": [
     "/web_accessible_resources/*",
     "/img/logo.png",

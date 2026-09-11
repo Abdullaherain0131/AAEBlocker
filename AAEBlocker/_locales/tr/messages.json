@@ -1310,5 +1310,173 @@
   "dummy": {
     "message": "Bu girdi en sonda olmalıdır",
     "description": "so we dont need to deal with comma for last entry"
+  },
+  "aaeSettingsTitle": {
+    "message": "AAEBlocker Ayarları",
+    "description": "Settings translation for aaeSettingsTitle"
+  },
+  "aaeSystemOnline": {
+    "message": "Sistem Çevrimiçi",
+    "description": "Settings translation for aaeSystemOnline"
+  },
+  "aaeAiSettings": {
+    "message": "AI Yapay Zeka Ayarları",
+    "description": "Settings translation for aaeAiSettings"
+  },
+  "aaeAggressiveLevel": {
+    "message": "AI Agresiflik Seviyesi",
+    "description": "Settings translation for aaeAggressiveLevel"
+  },
+  "aaeSkynetEngine": {
+    "message": "Yapay Zeka Motoru",
+    "description": "Settings translation for aaeSkynetEngine"
+  },
+  "aaeWasmAcceleration": {
+    "message": "WASM Hızlandırma",
+    "description": "Settings translation for aaeWasmAcceleration"
+  },
+  "aaeVisionAI": {
+    "message": "Vision AI (Görüntü İşleme)",
+    "description": "Settings translation for aaeVisionAI"
+  },
+  "aaeProtectionSettings": {
+    "message": "Koruma Ayarları",
+    "description": "Settings translation for aaeProtectionSettings"
+  },
+  "aaeAntiAdblock": {
+    "message": "Anti-Adblock Savunma",
+    "description": "Settings translation for aaeAntiAdblock"
+  },
+  "aaeCookieReject": {
+    "message": "Otomatik Çerez Reddi",
+    "description": "Settings translation for aaeCookieReject"
+  },
+  "aaeVideoSkip": {
+    "message": "Video Reklam Atlama",
+    "description": "Settings translation for aaeVideoSkip"
+  },
+  "aaeAntiFingerprint": {
+    "message": "Parmak İzi Koruması",
+    "description": "Settings translation for aaeAntiFingerprint"
+  },
+  "aaePaywallCrack": {
+    "message": "Paywall Kırıcı",
+    "description": "Settings translation for aaePaywallCrack"
+  },
+  "aaeLinkDecloaker": {
+    "message": "Link Gizleme Tespit",
+    "description": "Settings translation for aaeLinkDecloaker"
+  },
+  "aaeWordCensor": {
+    "message": "Kelime Sansürü",
+    "description": "Settings translation for aaeWordCensor"
+  },
+  "aaeCensoredWordsPlaceholder": {
+    "message": "Sansürlenecek kelimeleri girin (her satıra bir tane)...",
+    "description": "Settings translation for aaeCensoredWordsPlaceholder"
+  },
+  "aaeSaveWords": {
+    "message": "Kelimeleri Kaydet",
+    "description": "Settings translation for aaeSaveWords"
+  },
+  "aaeWordsSavedStatus": {
+    "message": "Kelimeler kaydedildi!",
+    "description": "Settings translation for aaeWordsSavedStatus"
+  },
+  "aaeDataManagement": {
+    "message": "Veri Yönetimi",
+    "description": "Settings translation for aaeDataManagement"
+  },
+  "aaeExportBrain": {
+    "message": "Beyin Dışa Aktar",
+    "description": "Settings translation for aaeExportBrain"
+  },
+  "aaeImportBrain": {
+    "message": "Beyin İçe Aktar",
+    "description": "Settings translation for aaeImportBrain"
+  },
+  "aaeResetSelectors": {
+    "message": "Öğrenilmiş Seçicileri Sıfırla",
+    "description": "Settings translation for aaeResetSelectors"
+  },
+  "aaeResetStats": {
+    "message": "Tüm İstatistikleri Sıfırla",
+    "description": "Settings translation for aaeResetStats"
+  },
+  "aaeResetConfirm": {
+    "message": "Sıfırlamak istediğinize emin misiniz?",
+    "description": "Settings translation for aaeResetConfirm"
+  },
+  "aaeResetDone": {
+    "message": "Sıfırlandı.",
+    "description": "Settings translation for aaeResetDone"
+  },
+  "aaeCrowdsourceSettings": {
+    "message": "Crowdsource Ayarları",
+    "description": "Settings translation for aaeCrowdsourceSettings"
+  },
+  "aaeCrowdsourceNetwork": {
+    "message": "Topluluk Öğrenme Ağı",
+    "description": "Settings translation for aaeCrowdsourceNetwork"
+  },
+  "aaeCrowdsourceDesc": {
+    "message": "Açıldığında, engellenen reklam seçicileri anonim olarak topluluk ağıyla paylaşılır.",
+    "description": "Settings translation for aaeCrowdsourceDesc"
+  },
+  "aaeDownloadNetwork": {
+    "message": "Kolektif Ağı İndir (Senkronize Et)",
+    "description": "Settings translation for aaeDownloadNetwork"
+  },
+  "aaeAiStatsSummary": {
+    "message": "AI İstatistik Özeti",
+    "description": "Settings translation for aaeAiStatsSummary"
+  },
+  "aaeAdsBlockedLabel": {
+    "message": "Yapay Zekanın Engellediği Reklamlar:",
+    "description": "Settings translation for aaeAdsBlockedLabel"
+  },
+  "aaeBrainVersionLabel": {
+    "message": "Mevcut Beyin Sürümü:",
+    "description": "Settings translation for aaeBrainVersionLabel"
+  },
+  "aaeLastUpdateLabel": {
+    "message": "Son Güncelleme:",
+    "description": "Settings translation for aaeLastUpdateLabel"
+  },
+  "aaeSyncStarted": {
+    "message": "SYNC_START: Merkezi sunucuya bağlanılıyor...",
+    "description": "Settings translation for aaeSyncStarted"
+  },
+  "aaeSyncSuccess": {
+    "message": "SYNC_SUCCESS: Beyin başarıyla güncellendi.",
+    "description": "Settings translation for aaeSyncSuccess"
+  },
+  "aaeSyncError": {
+    "message": "SYNC_ERROR: Senkronizasyon başarısız.",
+    "description": "Settings translation for aaeSyncError"
+  },
+  "aaeBrainImportSuccess": {
+    "message": "Yapay zeka beyni başarıyla içe aktarıldı!",
+    "description": "Settings translation for aaeBrainImportSuccess"
+  },
+  "aaeBrainImportError": {
+    "message": "Geçersiz beyin dosyası! Lütfen doğru bir JSON formatı seçin.",
+    "description": "Settings translation for aaeBrainImportError"
+  },
+  "aaeSyncConnecting": {
+    "message": "Bağlanıyor...",
+    "description": "Settings translation for aaeSyncConnecting"
+  },
+  "aaeSyncConnectLog": {
+    "message": "FIREBASE_CONNECT: https://aaeb-19471-default-rtdb.europe-west1.firebasedatabase.app/latest_weights.json",
+    "description": "Settings translation for aaeSyncConnectLog"
+  },
+  "aaeSyncDownloading": {
+    "message": "Ağırlıklar İndiriliyor...",
+    "description": "Settings translation for aaeSyncDownloading"
+  },
+  "aaeSystemStatus": {
+    "message": "Sistem Çevrimiçi",
+    "description": "Settings translation for aaeSystemStatus"
   }
 }

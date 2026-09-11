@@ -96,22 +96,22 @@
                 // Firebase Realtime Database REST API (ÜCRETSİZ)
                 const ENDPOINT = `https://aaeb-19471-default-rtdb.europe-west1.firebasedatabase.app/gradients.json`;
                 
+                // AAEBlocker Secret Network Token (Güvenlik)
+                const SECRET_NETWORK_TOKEN = "AAE_CORE_SECURE_TOKEN_2026_X9";
+
                 // Güvenli ve küçük boyutlu payload
                 const payload = {
                     client_id: await getOrCreateClientId(),
                     updates: pending,
+                    token: SECRET_NETWORK_TOKEN, // Doğrulama için payload içine ekledik
                     timestamp: { ".sv": "timestamp" } // Firebase sunucu saati
                 };
-
-                // AAEBlocker Secret Network Token (Güvenlik)
-                const SECRET_NETWORK_TOKEN = "AAE_CORE_SECURE_TOKEN_2026_X9";
 
                 // Sunucuya POST isteği (Gerçek Ağ Entegrasyonu)
                 const response = await fetch(ENDPOINT, {
                     method: 'POST',
                     headers: { 
-                        'Content-Type': 'application/json',
-                        'X-AAE-Network-Token': SECRET_NETWORK_TOKEN
+                        'Content-Type': 'application/json'
                     },
                     body: JSON.stringify(payload)
                 });

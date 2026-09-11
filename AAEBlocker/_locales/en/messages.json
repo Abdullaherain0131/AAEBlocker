@@ -1310,5 +1310,173 @@
   "dummy": {
     "message": "This entry must be the last one",
     "description": "so we dont need to deal with comma for last entry"
+  },
+  "aaeSettingsTitle": {
+    "message": "AAEBlocker Settings",
+    "description": "Settings translation for aaeSettingsTitle"
+  },
+  "aaeSystemOnline": {
+    "message": "System Online",
+    "description": "Settings translation for aaeSystemOnline"
+  },
+  "aaeAiSettings": {
+    "message": "AI Artificial Intelligence Settings",
+    "description": "Settings translation for aaeAiSettings"
+  },
+  "aaeAggressiveLevel": {
+    "message": "AI Aggressiveness Level",
+    "description": "Settings translation for aaeAggressiveLevel"
+  },
+  "aaeSkynetEngine": {
+    "message": "Skynet AI Engine",
+    "description": "Settings translation for aaeSkynetEngine"
+  },
+  "aaeWasmAcceleration": {
+    "message": "WASM Acceleration",
+    "description": "Settings translation for aaeWasmAcceleration"
+  },
+  "aaeVisionAI": {
+    "message": "Vision AI (Image Processing)",
+    "description": "Settings translation for aaeVisionAI"
+  },
+  "aaeProtectionSettings": {
+    "message": "Protection Settings",
+    "description": "Settings translation for aaeProtectionSettings"
+  },
+  "aaeAntiAdblock": {
+    "message": "Anti-Adblock Defense",
+    "description": "Settings translation for aaeAntiAdblock"
+  },
+  "aaeCookieReject": {
+    "message": "Auto Cookie Reject",
+    "description": "Settings translation for aaeCookieReject"
+  },
+  "aaeVideoSkip": {
+    "message": "Video Ad Skip",
+    "description": "Settings translation for aaeVideoSkip"
+  },
+  "aaeAntiFingerprint": {
+    "message": "Anti-Fingerprinting",
+    "description": "Settings translation for aaeAntiFingerprint"
+  },
+  "aaePaywallCrack": {
+    "message": "Paywall Cracker",
+    "description": "Settings translation for aaePaywallCrack"
+  },
+  "aaeLinkDecloaker": {
+    "message": "Link Decloaker",
+    "description": "Settings translation for aaeLinkDecloaker"
+  },
+  "aaeWordCensor": {
+    "message": "Word Censor",
+    "description": "Settings translation for aaeWordCensor"
+  },
+  "aaeCensoredWordsPlaceholder": {
+    "message": "Enter words to censor (one per line)...",
+    "description": "Settings translation for aaeCensoredWordsPlaceholder"
+  },
+  "aaeSaveWords": {
+    "message": "Save Words",
+    "description": "Settings translation for aaeSaveWords"
+  },
+  "aaeWordsSavedStatus": {
+    "message": "Words saved!",
+    "description": "Settings translation for aaeWordsSavedStatus"
+  },
+  "aaeDataManagement": {
+    "message": "Data Management",
+    "description": "Settings translation for aaeDataManagement"
+  },
+  "aaeExportBrain": {
+    "message": "Export Brain",
+    "description": "Settings translation for aaeExportBrain"
+  },
+  "aaeImportBrain": {
+    "message": "Import Brain",
+    "description": "Settings translation for aaeImportBrain"
+  },
+  "aaeResetSelectors": {
+    "message": "Reset Learned Selectors",
+    "description": "Settings translation for aaeResetSelectors"
+  },
+  "aaeResetStats": {
+    "message": "Reset All Statistics",
+    "description": "Settings translation for aaeResetStats"
+  },
+  "aaeResetConfirm": {
+    "message": "Are you sure you want to reset?",
+    "description": "Settings translation for aaeResetConfirm"
+  },
+  "aaeResetDone": {
+    "message": "Reset completed.",
+    "description": "Settings translation for aaeResetDone"
+  },
+  "aaeCrowdsourceSettings": {
+    "message": "Crowdsource Settings",
+    "description": "Settings translation for aaeCrowdsourceSettings"
+  },
+  "aaeCrowdsourceNetwork": {
+    "message": "Community Learning Network",
+    "description": "Settings translation for aaeCrowdsourceNetwork"
+  },
+  "aaeCrowdsourceDesc": {
+    "message": "When enabled, blocked ad selectors are anonymously shared with the community network.",
+    "description": "Settings translation for aaeCrowdsourceDesc"
+  },
+  "aaeDownloadNetwork": {
+    "message": "Download Network (Sync)",
+    "description": "Settings translation for aaeDownloadNetwork"
+  },
+  "aaeAiStatsSummary": {
+    "message": "AI Stats Summary",
+    "description": "Settings translation for aaeAiStatsSummary"
+  },
+  "aaeAdsBlockedLabel": {
+    "message": "Ads Blocked by AI",
+    "description": "Settings translation for aaeAdsBlockedLabel"
+  },
+  "aaeBrainVersionLabel": {
+    "message": "Current Brain Version",
+    "description": "Settings translation for aaeBrainVersionLabel"
+  },
+  "aaeLastUpdateLabel": {
+    "message": "Last Update",
+    "description": "Settings translation for aaeLastUpdateLabel"
+  },
+  "aaeSyncStarted": {
+    "message": "SYNC_START: Connecting to central server...",
+    "description": "Settings translation for aaeSyncStarted"
+  },
+  "aaeSyncSuccess": {
+    "message": "SYNC_SUCCESS: Brain successfully updated.",
+    "description": "Settings translation for aaeSyncSuccess"
+  },
+  "aaeSyncError": {
+    "message": "SYNC_ERROR: Sync failed.",
+    "description": "Settings translation for aaeSyncError"
+  },
+  "aaeBrainImportSuccess": {
+    "message": "AI Brain imported successfully!",
+    "description": "Settings translation for aaeBrainImportSuccess"
+  },
+  "aaeBrainImportError": {
+    "message": "Invalid brain file! Please choose a valid JSON format.",
+    "description": "Settings translation for aaeBrainImportError"
+  },
+  "aaeSyncConnecting": {
+    "message": "Connecting...",
+    "description": "Settings translation for aaeSyncConnecting"
+  },
+  "aaeSyncConnectLog": {
+    "message": "FIREBASE_CONNECT: https://aaeb-19471-default-rtdb.europe-west1.firebasedatabase.app/latest_weights.json",
+    "description": "Settings translation for aaeSyncConnectLog"
+  },
+  "aaeSyncDownloading": {
+    "message": "Downloading weights...",
+    "description": "Settings translation for aaeSyncDownloading"
+  },
+  "aaeSystemStatus": {
+    "message": "System Online",
+    "description": "Settings translation for aaeSystemStatus"
   }
 }
