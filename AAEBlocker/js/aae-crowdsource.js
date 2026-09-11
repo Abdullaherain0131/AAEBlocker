@@ -94,9 +94,7 @@
 
             try {
                 // Firebase Realtime Database REST API (ÜCRETSİZ)
-                // KENDİ VERİTABANINIZ İÇİN BURAYI DEĞİŞTİRİN:
-                const FIREBASE_PROJECT_ID = "aae-blocker-v11"; // Firebase Proje ID'nizi buraya yazın
-                const ENDPOINT = `https://${FIREBASE_PROJECT_ID}-default-rtdb.firebaseio.com/gradients.json`;
+                const ENDPOINT = `https://aaeb-19471-default-rtdb.europe-west1.firebasedatabase.app/gradients.json`;
                 
                 // Güvenli ve küçük boyutlu payload
                 const payload = {

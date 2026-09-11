@@ -198,6 +198,112 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 
+    // Firebase Kolektif Ağı İndir (Streaming Fetch)
+    const syncNetworkBtn = document.getElementById('sync-network-btn');
+    const syncProgressContainer = document.getElementById('sync-progress-container');
+    const syncProgressBar = document.getElementById('sync-progress-bar');
+    const syncPercentText = document.getElementById('sync-percent-text');
+    const syncStatusText = document.getElementById('sync-status-text');
+
+    if (syncNetworkBtn) {
+        syncNetworkBtn.addEventListener('click', async () => {
+            syncNetworkBtn.disabled = true;
+            syncProgressContainer.style.display = 'block';
+            syncProgressBar.style.width = '0%';
+            syncPercentText.textContent = '0%';
+            syncStatusText.textContent = 'Bağlanıyor...';
+            
+            const terminalOutput = document.getElementById('idle-terminal-output');
+            
+            function logTerminal(msg, isError = false) {
+                if(terminalOutput) {
+                    const color = isError ? 'var(--danger-color)' : 'var(--accent-color)';
+                    terminalOutput.innerHTML = `<div class="term-line" style="color:${color}">> ${msg}</div>` + terminalOutput.innerHTML;
+                }
+            }
+
+            try {
+                logTerminal('FIREBASE_CONNECT: https://aaeb-19471-default-rtdb.europe-west1.firebasedatabase.app/latest_weights.json');
+                const response = await fetch('https://aaeb-19471-default-rtdb.europe-west1.firebasedatabase.app/latest_weights.json');
+                
+                if (!response.ok) {
+                    throw new Error(`Sunucu Hatası: ${response.status}`);
+                }
+
+                // Header'dan boyutu al (Firebase bazen göndermeyebilir, 100KB varsayalım)
+                const contentLength = response.headers.get('content-length');
+                const total = contentLength ? parseInt(contentLength, 10) : 102400; 
+                let loaded = 0;
+
+                const reader = response.body.getReader();
+                const chunks = [];
+
+                syncStatusText.textContent = 'Ağırlıklar İndiriliyor...';
+
+                while(true) {
+                    const {done, value} = await reader.read();
+                    if (done) break;
+                    
+                    chunks.push(value);
+                    loaded += value.byteLength;
+                    
+                    // İlerleme hesapla (max %100)
+                    let progress = Math.min(Math.round((loaded / total) * 100), 100);
+                    // Eğer boyut bilinmiyorsa sanal bir artış yap
+                    if (!contentLength && progress === 100 && !done) progress = 99;
+                    
+                    syncProgressBar.style.width = progress + '%';
+                    syncPercentText.textContent = progress + '%';
+                }
+
+                syncStatusText.textContent = 'Derleniyor...';
+                logTerminal('DOWNLOAD_COMPLETE: JSON Parse ediliyor...');
+
+                // Chunk'ları birleştir ve text'e çevir
+                const chunksAll = new Uint8Array(loaded);
+                let position = 0;
+                for(let chunk of chunks) {
+                    chunksAll.set(chunk, position);
+                    position += chunk.length;
+                }
+                const resultText = new TextDecoder("utf-8").decode(chunksAll);
+                
+                const weightsJson = JSON.parse(resultText);
+                
+                if (!weightsJson || Object.keys(weightsJson).length === 0) {
+                     throw new Error('Veritabanında henüz ağırlık verisi bulunmuyor (Boş Dönüş).');
+                }
+
+                chrome.storage.local.set({ aae_ai_weights: weightsJson }, () => {
+                    syncStatusText.textContent = 'Başarılı!';
+                    syncPercentText.textContent = '100%';
+                    syncProgressBar.style.width = '100%';
+                    syncProgressBar.style.background = 'var(--success-color)';
+                    logTerminal('SYNC_SUCCESS: Ağırlıklar belleğe yazıldı.');
+                    
+                    setTimeout(() => {
+                        syncProgressContainer.style.display = 'none';
+                        syncNetworkBtn.disabled = false;
+                        syncProgressBar.style.background = 'var(--accent-color)';
+                    }, 3000);
+                });
+
+            } catch (err) {
+                syncStatusText.textContent = 'Bağlantı Hatası!';
+                syncStatusText.style.color = 'var(--danger-color)';
+                syncProgressBar.style.background = 'var(--danger-color)';
+                logTerminal(`SYNC_ERROR: ${err.message}`, true);
+                
+                setTimeout(() => {
+                    syncProgressContainer.style.display = 'none';
+                    syncNetworkBtn.disabled = false;
+                    syncStatusText.style.color = 'inherit';
+                    syncProgressBar.style.background = 'var(--accent-color)';
+                }, 4000);
+            }
+        });
+    }
+
     // Başlangıç yüklemesi
     loadData();
 
